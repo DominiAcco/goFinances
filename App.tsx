@@ -1,4 +1,7 @@
+import 'react-native-gesture-handler'
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { AppRoutes } from './src/Routes/app.routes';
 import { Dashboard } from './src/screens/Dashboard';
 
 import { ThemeProvider } from 'styled-components';
@@ -27,7 +30,10 @@ if (!fontsLoaded){
   return (
     <ThemeProvider theme={theme}
     >
-       <Dashboard />
+       <NavigationContainer>
+        <AppRoutes/>
+
+       </NavigationContainer>
     </ThemeProvider>
    
   );
