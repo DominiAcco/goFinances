@@ -36,6 +36,9 @@ npm i //para instalar as dependências
 ````
 ## Mudança  para conectar com a api 
 Na pasta services no arquivo api.ts adicione o ip do seu computador 
-|--sevices
-    |-api.ts
+````
+|--src
+    |--sevices
+        |api.ts
+````
 const API_BASE_URL = "http://ip do seu computador :3000/api/v1";
